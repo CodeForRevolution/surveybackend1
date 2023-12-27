@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 
 
 const connectDatabase=()=>{
-    mongoose.connect(process.env.DB_URI,{
+    mongoose.connect(process.env.DB_URI,{   // connecting the express with mongodb db database using mongoose
         useNewUrlParser:true,
         useUnifiedTopology:true,
         useCreateIndex:true
